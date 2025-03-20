@@ -1,74 +1,77 @@
 /* General Page Styles */
 .pickup-container {
-    font-family: Arial, sans-serif;
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    background-color: #f8f8f8;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 22px;
-    margin-bottom: 5px;
-  }
-  
-  p {
-    color: #777;
-    font-size: 14px;
-  }
-  
-  /* Pickup Options */
-  .pickup-option {
-    display: flex;
-    align-items: center;
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .pickup-option:hover {
-    background: #eaeaea;
-  }
-  
-  .icon {
-    font-size: 24px;
-    margin-right: 15px;
-    color: blue;
-  }
-  
-  .icon.green {
-    color: green;
-  }
-  
-  .arrow {
-    margin-left: auto;
-    font-size: 20px;
-    color: gray;
-  }
-  
-  /* Info Box */
-  .info-box {
-    display: flex;
-    align-items: center;
-    background: #eef4ff;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 15px;
-  }
-  
-  .info-icon {
-    font-size: 18px;
-    color: blue;
-    margin-right: 10px;
-  }
-  
-  .info-box p {
-    color: #0056b3;
-    font-size: 12px;
-    margin: 0;
-    text-align: left;
-  }
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f5ece2; /* Soft beige */
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #9a683e; /* Deep brown */
+}
+
+p {
+  color: #7a4b2d; /* Dark brown */
+  font-size: 14px;
+}
+
+/* Pickup Options */
+.pickup-option {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pickup-option:hover {
+  background: #e0c3a6; /* Soft muted brown */
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #9a683e; /* Deep brown */
+}
+
+.icon.green {
+  color: #7a4b2d; /* Darker brown */
+}
+
+.arrow {
+  margin-left: auto;
+  font-size: 20px;
+  color: #9a683e; /* Matching deep brown */
+}
+
+/* Info Box */
+.info-box {
+  display: flex;
+  align-items: center;
+  background: #f5d7b8; /* Light brown */
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-icon {
+  font-size: 18px;
+  color: #7a4b2d; /* Dark brown */
+  margin-right: 10px;
+}
+
+.info-box p {
+  color: #9a683e; /* Deep brown */
+  font-size: 12px;
+  margin: 0;
+  text-align: left;
+}

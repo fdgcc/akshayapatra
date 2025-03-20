@@ -9,6 +9,8 @@ import FoodDonationForm from "./food";
 import Confirmation from "./Confirmation";
 import ShelterConnect from "./shel";
 import DeliveryTracking from "./devl";
+import DeliveryStarted from "./dev";
+import './dev.css';
 import './devl.css';
 import Vol from "./vol";
 import Pick from "./pick";
@@ -36,6 +38,7 @@ root.render(
         <Route path="/pick" element={<Pick />} />
         <Route path="/vol" element={<Vol />} />
         <Route path="/food" element={<FoodDonationForm />} />
+        <Route path="/dev" element={<DeliveryStarted />} />
 
 
       </Routes>

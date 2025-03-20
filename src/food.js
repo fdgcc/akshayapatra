@@ -35,7 +35,7 @@ const FoodDonationForm = () => {
 
   return (
     <div className="donation-form-container">
-      <button className="back-btn" onClick={() => navigate("/home")}>&larr; Back</button>
+      <button className="back-btn" onClick={() => navigate(-1)}>&larr; Back</button>
       <h2>Donate Food</h2>
 
       <form onSubmit={handleSubmit}> {/* ✅ Form handles submission */}

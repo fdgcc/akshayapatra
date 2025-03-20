@@ -4,34 +4,35 @@
     max-width: 400px;
     margin: auto;
     padding: 20px;
-    background-color: #f8f8f8;
-  }
-  
-  /* Header */
-  .header {
+    background-color: #f3e5d8; /* Soft background */
+}
+
+/* Header */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     background: white;
     border-radius: 10px;
-  }
-  
-  .header h2 {
+}
+
+.header h2 {
     margin: 0;
-    color: #2c7a4b;
+    color: #9a683e; /* Updated text color */
     font-weight: bold;
-  }
-  
-  .refresh-btn {
+}
+
+.refresh-btn {
     border: none;
     background: none;
     font-size: 18px;
     cursor: pointer;
-  }
-  
-  /* Today's Deliveries */
-  .deliveries {
+    color: #9a683e;
+}
+
+/* Today's Deliveries */
+.deliveries {
     background: white;
     padding: 15px;
     border-radius: 10px;
@@ -39,63 +40,66 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-  }
-  
-  .delivery-box {
+}
+
+.delivery-box {
     display: flex;
     align-items: center;
-  }
-  
-  .delivery-box h1 {
+}
+
+.delivery-box h1 {
     margin: 0;
     font-size: 24px;
-  }
-  
-  .truck-icon {
-    background: #d4f5d4;
-    color: green;
+    color: #9a683e;
+}
+
+.truck-icon {
+    background: #edd2b2; /* Light brown background */
+    color: #9a683e; /* Darker brown */
     padding: 8px;
     border-radius: 50%;
     font-size: 20px;
     margin-left: 10px;
-  }
-  
-  /* Pickup Requests */
-  .pickup-requests {
+}
+
+/* Pickup Requests */
+.pickup-requests {
     margin-top: 15px;
-  }
-  
-  .request-card {
+}
+
+.request-card {
     background: white;
     padding: 15px;
     border-radius: 10px;
     margin-top: 10px;
     position: relative;
-  }
-  
-  .request-info h4 {
+}
+
+.request-info h4 {
     margin: 0;
-  }
-  
-  .request-info p {
-    color: #777;
+    color: #9a683e;
+}
+
+.request-info p {
+    color: #7a5a3f;
     font-size: 14px;
     margin: 5px 0;
-  }
-  
-  .pending-badge {
+}
+
+.pending-badge {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: orange;
+    background: #cca475; /* Light brown */
     color: white;
     padding: 3px 8px;
     border-radius: 5px;
     font-size: 12px;
-  }
-  
-  .start-delivery {
-    background: #2c7a4b;
+}
+
+/* Start Delivery Button */
+.start-delivery {
+    background: #9a683e;
     color: white;
     border: none;
     width: 100%;
@@ -104,50 +108,55 @@
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
-  }
-  
-  /* Top Volunteers */
-  .top-volunteers {
+}
+
+.start-delivery:hover {
+    background: #cca475;
+}
+
+/* Top Volunteers */
+.top-volunteers {
     margin-top: 20px;
-  }
-  
-  .volunteer-list {
+}
+
+.volunteer-list {
     background: white;
     padding: 15px;
     border-radius: 10px;
-  }
-  
-  .volunteer {
+}
+
+.volunteer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
-  }
-  
-  .volunteer img {
+}
+
+.volunteer img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
-  }
-  
-  .volunteer-info {
+}
+
+.volunteer-info {
     flex: 1;
-  }
-  
-  .volunteer-info h5 {
+}
+
+.volunteer-info h5 {
     margin: 0;
     font-size: 16px;
-  }
-  
-  .volunteer-info p {
+    color: #9a683e;
+}
+
+.volunteer-info p {
     margin: 0;
     font-size: 14px;
-    color: #777;
-  }
-  
-  /* Navigation */
-  .navbar {
+    color: #7a5a3f;
+}
+
+/* Navigation */
+.navbar {
     display: flex;
     justify-content: space-around;
     background: white;
@@ -159,14 +168,14 @@
     max-width: 400px;
     left: 50%;
     transform: translateX(-50%);
-  }
-  
-  .nav-item {
+}
+
+.nav-item {
     text-align: center;
-    color: #777;
+    color: #7a5a3f;
     font-size: 14px;
-  }
-  
-  .nav-item.active {
-    color: green;
-  }
+}
+
+.nav-item.active {
+    color: #9a683e;
+}

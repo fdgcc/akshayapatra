@@ -6,6 +6,8 @@ import HomePage from "./HomePage";
 import FoodDonationForm from "./food"; 
 import Confirmation from "./Confirmation"; 
 import Vol from "./vol"; 
+import Confirmation from "./Confirmation"; 
+import DeliveryStarted from "./dev"; 
 import ShelterConnect from "./ShelterConnect";
 import DeliveryTracking from "./devl";
 import Pick from "./pick";
@@ -23,6 +25,7 @@ function App() {
         <Route path="/pick" element={<Pick />} />
         <Route path="/vol" element={<Vol />} />
         <Route path="/devl" element={<DeliveryTracking />} />
+        <Route path="/dev" element={<DeliveryStarted />} />
 
       </Routes>
     </Router>

@@ -52,7 +52,7 @@ const DeliveryTracking = () => {
         <button className="pickup-btn" onClick={() => setPickedUp(true)}>
           ✅ Mark as Picked Up
         </button>
-        <button className="deliver-btn" disabled={!pickedUp} onClick={() => alert("Delivery Started!")}>
+        <button className="deliver-btn" disabled={!pickedUp} onClick={() => navigate("/dev")}>
           🚚 Deliver Now
         </button>
       </div>

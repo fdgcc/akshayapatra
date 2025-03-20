@@ -4,114 +4,124 @@
     max-width: 400px;
     margin: auto;
     padding: 20px;
-    background-color: #f8f8f8;
-  }
-  
-  /* Header */
-  .header {
+    background-color: #f5ece2; /* Soft beige for background */
+}
+
+/* Header */
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background: white;
+    background: #cca475; /* Primary color */
     border-radius: 10px;
-  }
-  
-  .help-icon {
+    color: white;
+}
+
+.help-icon {
     font-size: 18px;
-    color: red;
-  }
-  
-  .profile-section {
+    color: white;
+}
+
+.profile-section {
     display: flex;
     align-items: center;
-  }
-  
-  .notification-icon {
+}
+
+.notification-icon {
     margin-right: 10px;
-  }
-  
-  .profile-pic {
+}
+
+.profile-pic {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-  }
-  
-  /* Meals Info */
-  .meals-info {
+    border: 2px solid white;
+}
+
+/* Meals Info */
+.meals-info {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
-  }
-  
-  .info-box {
+}
+
+.info-box {
     background: white;
     padding: 15px;
     flex: 1;
     text-align: center;
     margin-right: 10px;
     border-radius: 10px;
-  }
-  
-  .info-box:last-child {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-box:last-child {
     margin-right: 0;
-  }
-  
-  .info-box p {
+}
+
+.info-box p {
     margin: 0;
     font-size: 14px;
-    color: #777;
-  }
-  
-  /* Request Button */
-  .request-btn {
+    color: #7a4b2d; /* Dark brown for text */
+}
+
+/* Request Button */
+.request-btn {
     width: 100%;
     padding: 12px;
-    background: red;
+    background: #9a683e; /* Accent color */
     color: white;
     border: none;
     border-radius: 5px;
     margin-top: 15px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  /* Incoming Deliveries */
-  .incoming-deliveries {
+    transition: 0.3s;
+}
+
+.request-btn:hover {
+    background: #7a4b2d; /* Darker shade on hover */
+}
+
+/* Incoming Deliveries */
+.incoming-deliveries {
     margin-top: 20px;
-  }
-  
-  .delivery-card {
+}
+
+.delivery-card {
     background: white;
     padding: 15px;
     border-radius: 10px;
     margin-top: 10px;
-  }
-  
-  .order-header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .status {
+}
+
+.status {
     padding: 3px 8px;
     border-radius: 5px;
     font-size: 12px;
     color: white;
-  }
-  
-  .in-transit {
-    background: blue;
-  }
-  
-  .arrived {
-    background: green;
-  }
-  
-  /* Buttons */
-  .track-btn,
-  .confirm-btn {
+    font-weight: bold;
+}
+
+.in-transit {
+    background: #cca475; /* Muted brown */
+}
+
+.arrived {
+    background: #9a683e; /* Accent brown */
+}
+
+/* Buttons */
+.track-btn,
+.confirm-btn {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
@@ -119,20 +129,30 @@
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  .track-btn {
-    background: #f0f0f0;
-    color: black;
-  }
-  
-  .confirm-btn {
-    background: #2c7a4b;
+    transition: 0.3s;
+}
+
+.track-btn {
+    background: #e4c9a3; /* Light brown */
+    color: #7a4b2d; /* Dark brown */
+}
+
+.track-btn:hover {
+    background: #cca475; /* Primary brown */
     color: white;
-  }
-  
-  /* Bottom Navigation */
-  .bottom-nav {
+}
+
+.confirm-btn {
+    background: #9a683e; /* Deep brown */
+    color: white;
+}
+
+.confirm-btn:hover {
+    background: #7a4b2d;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
     display: flex;
     justify-content: space-around;
     background: white;
@@ -144,14 +164,16 @@
     max-width: 400px;
     left: 50%;
     transform: translateX(-50%);
-  }
-  
-  .nav-item {
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
     text-align: center;
-    color: #777;
+    color: #7a4b2d; /* Dark brown */
     font-size: 14px;
-  }
-  
-  .nav-item.active {
-    color: red;
-  }
+}
+
+.nav-item.active {
+    color: #9a683e; /* Accent color */
+    font-weight: bold;
+}

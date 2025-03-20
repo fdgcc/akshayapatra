@@ -1,4 +1,4 @@
-/* Confirmation.css */
+/* DeliveryStarted.css */
 .confirmation-container {
   display: flex;
   justify-content: center;
@@ -22,30 +22,26 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Success Icon Animation */
+/* Delivery Icon Animation */
 .success-icon {
-  color: #9a683e; /* Updated color */
+  color: #a67c52; /* Muted Caramel for delivery */
   font-size: 55px;
-  animation: popIn 0.5s ease-in-out;
+  animation: moveTruck 0.8s ease-in-out infinite alternate;
 }
 
-@keyframes popIn {
+/* Animation for Truck Movement */
+@keyframes moveTruck {
   0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  80% {
-    transform: scale(1.1);
+    transform: translateX(-5px);
   }
   100% {
-    transform: scale(1);
-    opacity: 1;
+    transform: translateX(5px);
   }
 }
 
 h2 {
   margin: 15px 0;
-  color: #9a683e; /* Updated color */
+  color: #9a683e; /* Warm Coffee Brown */
   font-weight: bold;
 }
 
@@ -57,7 +53,7 @@ p {
 
 /* Home Button */
 .home-btn {
-  background-color: #9a683e; /* Updated color */
+  background-color: #9a683e; /* Updated Coffee Brown */
   color: white;
   padding: 12px 18px;
   border: none;
