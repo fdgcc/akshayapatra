@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Onboarding from "./onboarding"; 
+import AuthPage from "./AuthPage"; 
+import HomePage from "./HomePage"; 
+import FoodDonationForm from "./food"; 
+import Confirmation from "./Confirmation"; 
+import Vol from "./vol"; 
+import ShelterConnect from "./ShelterConnect";
+import DeliveryTracking from "./devl";
+import Pick from "./pick";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router> 
+      <Routes>
+        <Route path="/" element={<Onboarding />} />
+        <Route path="/auth" element={<AuthPage />} />
+        <Route path="/home" element={<HomePage />} /> {/* ✅ Ensure consistent lowercase route */}
+        <Route path="/shel" element={<ShelterConnect />} />  
+        <Route path="/confirmation-food" element={<Confirmation />} />
+        <Route path="/food" element={<FoodDonationForm />} />
+        <Route path="/pick" element={<Pick />} />
+        <Route path="/vol" element={<Vol />} />
+        <Route path="/devl" element={<DeliveryTracking />} />
+
+      </Routes>
+    </Router>
   );
 }
 

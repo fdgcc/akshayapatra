@@ -1,0 +1,172 @@
+/* General Page Styles */
+.container {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  .header h2 {
+    margin: 0;
+    color: #2c7a4b;
+    font-weight: bold;
+  }
+  
+  .refresh-btn {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Today's Deliveries */
+  .deliveries {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .delivery-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .delivery-box h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .truck-icon {
+    background: #d4f5d4;
+    color: green;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  /* Pickup Requests */
+  .pickup-requests {
+    margin-top: 15px;
+  }
+  
+  .request-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .request-info h4 {
+    margin: 0;
+  }
+  
+  .request-info p {
+    color: #777;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .pending-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: orange;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .start-delivery {
+    background: #2c7a4b;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Top Volunteers */
+  .top-volunteers {
+    margin-top: 20px;
+  }
+  
+  .volunteer-list {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .volunteer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .volunteer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .volunteer-info {
+    flex: 1;
+  }
+  
+  .volunteer-info h5 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .volunteer-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Navigation */
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .nav-item {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+  }
+  
+  .nav-item.active {
+    color: green;
+  }

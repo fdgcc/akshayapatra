@@ -1,0 +1,38 @@
+/* Confirmation.css */
+.confirmation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.confirmation-card {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon {
+  color: green;
+  font-size: 50px;
+}
+
+h2 {
+  margin: 15px 0;
+}
+
+.home-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.home-btn:hover {
+  background-color: #218838;
+}
