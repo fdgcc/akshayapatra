@@ -1,3 +1,4 @@
+/* Onboarding Container */
 .onboarding-container {
   display: flex;
   flex-direction: column;
@@ -5,7 +6,7 @@
   justify-content: center;
   height: 100vh;
   text-align: center;
-  background: #f3e5d8; /* Soft background */
+  background: #f3e5d8; /* Changed to white background */
   padding: 20px;
   position: relative;
 }
@@ -28,41 +29,50 @@
   color: #cca475;
 }
 
-/* Onboarding Image */
+/* Welcome & Onboarding Images */
+.welcome-image,
 .onboarding-image {
-  width: 80%;
-  max-width: 300px;
+  width: 90%;
+  max-width: 358px; /* Increased max width */
+  height: 420px;
   margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.welcome-image:hover,
+.onboarding-image:hover {
+  transform: scale(1.05);
 }
 
 /* Title */
 .title {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: #9a683e;
 }
 
 /* Description */
 .description {
-  font-size: 16px;
+  font-size: 18px;
   color: #7a5a3f;
   margin-bottom: 20px;
-  max-width: 320px;
+  max-width: 380px;
+  line-height: 1.5;
 }
 
 /* Pagination Dots */
 .dots {
   display: flex;
-  gap: 6px;
+  gap: 8px;
   margin-bottom: 20px;
 }
 
 .dot {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background: #c9a183;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
@@ -70,17 +80,17 @@
 
 .dot.active {
   background: #9a683e;
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 /* Next Button */
 .next-btn {
   background: #9a683e;
   color: white;
-  padding: 12px 22px;
+  padding: 14px 26px;
   border: none;
-  border-radius: 6px;
-  font-size: 16px;
+  border-radius: 8px;
+  font-size: 18px;
   cursor: pointer;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
@@ -91,4 +101,27 @@
   background: #cca475;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .welcome-image,
+  .onboarding-image {
+    width: 95%;
+    max-width: 380px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 16px;
+    max-width: 320px;
+  }
+
+  .next-btn {
+    font-size: 16px;
+    padding: 12px 22px;
+  }
 }

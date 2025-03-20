@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./onboarding.css";
 
 const Onboarding = () => {
   const [step, setStep] = useState(0);
-  const navigate = useNavigate(); // Ensure `useNavigate` is correctly used inside <Router>
+  const navigate = useNavigate();
 
   const steps = [
     {
@@ -24,8 +24,19 @@ const Onboarding = () => {
     },
   ];
 
+  // Automatically move to step 1 after 5 seconds if step is 0 (intro screen)
+  useEffect(() => {
+    if (step === 0) {
+      const timer = setTimeout(() => {
+        setStep(1);
+      }, 8000); // 5 seconds
+
+      return () => clearTimeout(timer); // Cleanup timeout on unmount
+    }
+  }, [step]);
+
   const nextStep = () => {
-    if (step < steps.length - 1) {
+    if (step < steps.length) {
       setStep(step + 1);
     } else {
       navigate("/auth"); // Redirect to Login/Signup Page
@@ -37,17 +48,32 @@ const Onboarding = () => {
       <button className="skip-btn" onClick={() => navigate("/auth")}>
         Skip
       </button>
-      <img src={steps[step].image} alt="Onboarding Illustration" className="onboarding-image" />
-      <h2 className="title">{steps[step].title}</h2>
-      <p className="description">{steps[step].description}</p>
+
+      {step === 0 ? (
+        <>
+          <img src="aksh.jpg" alt="Welcome Image" className="welcome-image" />
+          <h2 className="title">AKSHYAPATRA</h2>
+          <p className="description">A platform to donate food and help communities.</p>
+        </>
+      ) : (
+        <>
+          <img src={steps[step - 1].image} alt="Onboarding Illustration" className="onboarding-image" />
+          <h2 className="title">{steps[step - 1].title}</h2>
+          <p className="description">{steps[step - 1].description}</p>
+        </>
+      )}
+
       <div className="dots">
-        {steps.map((_, index) => (
+        {[...Array(steps.length + 1)].map((_, index) => (
           <span key={index} className={index === step ? "dot active" : "dot"}></span>
         ))}
       </div>
-      <button className="next-btn" onClick={nextStep}>
-        {step < steps.length - 1 ? "Next" : "Get Started"}
-      </button>
+
+      {step !== 0 && (
+        <button className="next-btn" onClick={nextStep}>
+          {step < steps.length ? "Next" : "Get Started"}
+        </button>
+      )}
     </div>
   );
 };
